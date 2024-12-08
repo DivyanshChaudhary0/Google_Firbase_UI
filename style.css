@@ -44,7 +44,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 0 1.5vw;
-  gap: 3em;
+  gap: 5em;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 nav .menu {
@@ -62,7 +62,7 @@ nav .links {
 nav .links a {
   text-decoration: none;
   color: black;
-  font-size: 0.8em;
+  font-size: 1.1em;
   font-family: font3;
   opacity: 0.7;
   display: flex;
@@ -220,38 +220,40 @@ main .page1 .bottom .btn button:nth-child(2) {
 }
 main .page2 {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background-color: #1E1E1E;
-  padding: 5vh 10vw;
+  padding: 2vh 10vw;
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 main .page2 .left {
+  width: 50%;
+  height: 100%;
   border-right: 1px solid rgba(255, 255, 255, 0.073);
-  padding-top: 1vw;
   padding-right: 2vw;
 }
 main .page2 .part {
-  width: 50%;
-  height: 100%;
   color: white;
   display: flex;
   flex-direction: column;
   gap: 1em;
   font-family: font3;
 }
-main .page2 .part #h3 {
+main .page2 .part .top {
+  width: 100%;
+  height: 40vh;
+}
+main .page2 .part .top #h3 {
   font-size: 2em;
   font-family: font4;
   font-weight: 100;
   text-transform: uppercase;
 }
-main .page2 .part h4 {
+main .page2 .part .top h4 {
   width: 68%;
   font-size: 2em;
 }
-main .page2 .part p {
+main .page2 .part .top p {
   font-size: 1.6em;
   margin-top: 1em;
 }
@@ -281,7 +283,7 @@ main .page2 .part .center .box .image h3 {
   font-weight: 300;
 }
 main .page2 .part .btn {
-  margin-top: 5em;
+  margin-top: 3em;
 }
 main .page2 .part .btn button {
   padding: 0.5em 1.5em;
@@ -292,6 +294,8 @@ main .page2 .part .btn button {
   border-radius: 1.2em;
 }
 main .page2 .right {
+  width: 50%;
+  height: 100%;
   padding-left: 2vw;
 }
 main .page3 {
@@ -432,6 +436,7 @@ main .page4 .center .btm .btm-item p {
   font-size: 1.2em;
   font-family: font3;
 }
+
 @media (max-width: 600px) {
   nav {
     width: 100%;
