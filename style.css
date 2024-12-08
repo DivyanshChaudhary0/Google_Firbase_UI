@@ -220,7 +220,7 @@ main .page1 .bottom .btn button:nth-child(2) {
 }
 main .page2 {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #1E1E1E;
   padding: 2vh 10vw;
   display: flex;
@@ -252,10 +252,12 @@ main .page2 .part .top #h3 {
 main .page2 .part .top h4 {
   width: 68%;
   font-size: 2em;
+  margin-top: 0.5em;
+  line-height: 1;
 }
 main .page2 .part .top p {
   font-size: 1.6em;
-  margin-top: 1em;
+  margin-top: 1.5em;
 }
 main .page2 .part .center {
   width: 100%;
@@ -287,11 +289,17 @@ main .page2 .part .btn {
 }
 main .page2 .part .btn button {
   padding: 0.5em 1.5em;
-  border: 4px solid #FF9100;
+  border: 3px solid #FF9100;
   background-color: transparent;
   color: white;
   font-size: 1.3em;
+  font-weight: 600;
   border-radius: 1.2em;
+  cursor: pointer;
+}
+main .page2 .part .btn button:hover {
+  color: black;
+  background-color: #FF9100;
 }
 main .page2 .right {
   width: 50%;
@@ -534,16 +542,19 @@ main .page4 .center .btm .btm-item p {
     width: 100%;
     text-align: center;
   }
-  main .page2 .part #h3 {
+  main .page2 .part .top {
+    height: auto;
+  }
+  main .page2 .part .top #h3 {
     font-size: 1.2em;
     font-weight: 300;
   }
-  main .page2 .part h4 {
+  main .page2 .part .top h4 {
     width: 100%;
     font-size: 1.5em;
     line-height: 1.5;
   }
-  main .page2 .part p {
+  main .page2 .part .top p {
     width: 100%;
     font-size: 1.4em;
   }
